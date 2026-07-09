@@ -1,3 +1,4 @@
+import Link from "next/link";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/navbar";
@@ -10,14 +11,14 @@ export default function Home() {
       {/* HERO */}
       <section
         id="home"
-        className="grid min-h-[calc(100vh-73px)] items-center gap-12 overflow-hidden px-6 py-14 md:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:px-16"
+        className="grid min-h-[calc(100vh-73px)] items-center gap-10 overflow-hidden px-5 py-10 sm:px-6 sm:py-14 md:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-16"
       >
         <div>
           <p className="mb-6 text-xs uppercase tracking-[0.35em] text-black/45">
             Cybersecurity Portfolio
           </p>
 
-          <h1 className="font-serif text-[16vw] leading-[0.82] tracking-[-0.05em] sm:text-7xl md:text-8xl lg:text-[6.5rem] xl:text-[7.5rem]">
+          <h1 className="font-serif text-[15vw] leading-[0.86] tracking-[-0.05em] sm:text-7xl md:text-8xl lg:text-[6.5rem] lg:leading-[0.82] xl:text-[7.5rem]">
             Divyanka
             <br />
             Kirola
@@ -29,17 +30,17 @@ export default function Home() {
             platforms and security-focused communities.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
             <a
               href="#work"
-              className="rounded-full bg-black px-6 py-3 text-sm text-white transition hover:scale-105"
+              className="rounded-full bg-black px-4 py-3 text-center text-sm text-white transition hover:scale-105 sm:px-6"
             >
               View My Work
             </a>
 
             <a
               href="#about"
-              className="rounded-full border border-black px-6 py-3 text-sm transition hover:bg-black hover:text-white"
+              className="rounded-full border border-black px-4 py-3 text-center text-sm transition hover:bg-black hover:text-white sm:px-6"
             >
               Know More
             </a>
@@ -55,7 +56,7 @@ export default function Home() {
         </div>
 
         {/* HERO CARDS */}
-        <div className="mx-auto grid w-full max-w-[540px] grid-cols-3 gap-3">
+        <div className="mx-auto grid w-full max-w-[540px] grid-cols-2 gap-3 sm:grid-cols-3">
           <div className="flex min-h-[180px] flex-col justify-between rounded-[30px] bg-white p-5 shadow-sm transition duration-500 hover:-translate-y-2">
             <p className="text-[10px] uppercase tracking-[0.25em] text-black/40">
               About Me
@@ -74,7 +75,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 flex min-h-[220px] flex-col justify-between rounded-[30px] bg-[#4f7cff] p-5 text-white transition duration-500 hover:-translate-y-2">
+          <div className="flex min-h-[190px] sm:mt-10 sm:min-h-[220px] flex-col justify-between rounded-[30px] bg-[#4f7cff] p-5 text-white transition duration-500 hover:-translate-y-2">
             <p className="text-[10px] uppercase tracking-[0.25em] opacity-60">
               Flagship Project
             </p>
@@ -88,7 +89,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex min-h-[180px] flex-col justify-between rounded-[30px] bg-[#ffcf3f] p-5 transition duration-500 hover:-translate-y-2">
+          <Link
+            href="/leadership"
+            className="group flex min-h-[180px] flex-col justify-between rounded-[30px] bg-[#ffcf3f] p-5 transition duration-500 hover:-translate-y-2"
+          >
             <p className="text-[10px] uppercase tracking-[0.25em] text-black/45">
               Leadership
             </p>
@@ -101,10 +105,14 @@ export default function Home() {
                 <br />
                 2025–Present
               </p>
-            </div>
-          </div>
 
-          <div className="-mt-4 flex min-h-[165px] flex-col justify-between rounded-[30px] bg-[#ff8fa3] p-5 transition duration-500 hover:-translate-y-2">
+              <p className="mt-4 text-[10px] uppercase tracking-[0.2em] text-black/50 transition group-hover:translate-x-1">
+                Explore Leadership →
+              </p>
+            </div>
+          </Link>
+
+          <div className="flex min-h-[165px] sm:-mt-4 flex-col justify-between rounded-[30px] bg-[#ff8fa3] p-5 transition duration-500 hover:-translate-y-2">
             <p className="text-[10px] uppercase tracking-[0.25em] text-black/45">
               Research
             </p>
@@ -134,7 +142,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="-mt-6 flex min-h-[180px] flex-col justify-between rounded-[30px] bg-[#111] p-5 text-white transition duration-500 hover:-translate-y-2">
+          <div className="flex min-h-[180px] sm:-mt-6 flex-col justify-between rounded-[30px] bg-[#111] p-5 text-white transition duration-500 hover:-translate-y-2">
             <p className="text-[10px] uppercase tracking-[0.25em] opacity-50">
               Toolkit
             </p>
@@ -157,7 +165,7 @@ export default function Home() {
       {/* SELECTED WORK */}
       <section
         id="work"
-        className="border-t border-black/10 px-6 py-24 md:px-12 lg:px-16"
+        className="border-t border-black/10 px-5 py-16 sm:px-6 sm:py-20 md:px-12 md:py-24 lg:px-16"
       >
         <div className="mb-16 flex items-end justify-between gap-10">
           <div>
@@ -165,7 +173,7 @@ export default function Home() {
               Selected Work
             </p>
 
-            <h2 className="font-serif text-5xl leading-[0.95] tracking-tight md:text-7xl">
+            <h2 className="font-serif text-4xl leading-[0.95] tracking-tight sm:text-5xl md:text-7xl">
               Things I&apos;ve
               <br />
               built.
@@ -179,7 +187,7 @@ export default function Home() {
         </div>
 
         {/* PROJECT 01 — FORENSIX */}
-        <article className="group grid gap-8 border-t border-black/15 py-14 md:grid-cols-[0.1fr_0.9fr]">
+        <article className="group grid gap-8 border-t border-black/15 py-10 sm:py-14 md:grid-cols-[0.1fr_0.9fr]">
           <p className="text-sm text-black/35">01</p>
 
           <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -188,7 +196,7 @@ export default function Home() {
                 Digital Forensics · Flagship Project
               </p>
 
-              <h3 className="font-serif text-5xl tracking-tight md:text-6xl">
+              <h3 className="font-serif text-4xl tracking-tight sm:text-5xl md:text-6xl">
                 ForensiX
               </h3>
 
@@ -238,7 +246,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative min-h-[430px] overflow-hidden rounded-[36px] bg-[#111] p-6 text-white transition-all duration-500 group-hover:rounded-[60px] md:p-10">
+            <div className="relative min-h-[350px] sm:min-h-[430px] overflow-hidden rounded-[36px] bg-[#111] p-6 text-white transition-all duration-500 group-hover:rounded-[60px] md:p-10">
               <div className="flex items-center justify-between border-b border-white/10 pb-5">
                 <div>
                   <p className="text-xs uppercase tracking-[0.3em] text-white/40">
@@ -259,7 +267,7 @@ export default function Home() {
                     Evidence
                   </p>
 
-                  <p className="mt-6 font-serif text-3xl">Analyse</p>
+                  <p className="mt-6 font-serif text-2xl sm:text-3xl">Analyse</p>
                 </div>
 
                 <div className="rounded-[22px] bg-[#4f7cff] p-5">
@@ -267,7 +275,7 @@ export default function Home() {
                     Hashing
                   </p>
 
-                  <p className="mt-6 font-serif text-3xl">Verify</p>
+                  <p className="mt-6 font-serif text-2xl sm:text-3xl">Verify</p>
                 </div>
 
                 <div className="rounded-[22px] bg-[#d8e7d2] p-5 text-black">
@@ -275,7 +283,7 @@ export default function Home() {
                     Metadata
                   </p>
 
-                  <p className="mt-6 font-serif text-3xl">Extract</p>
+                  <p className="mt-6 font-serif text-2xl sm:text-3xl">Extract</p>
                 </div>
 
                 <div className="rounded-[22px] bg-[#ffcf3f] p-5 text-black">
@@ -283,7 +291,7 @@ export default function Home() {
                     Reports
                   </p>
 
-                  <p className="mt-6 font-serif text-3xl">Document</p>
+                  <p className="mt-6 font-serif text-2xl sm:text-3xl">Document</p>
                 </div>
               </div>
             </div>
@@ -291,7 +299,7 @@ export default function Home() {
         </article>
 
         {/* PROJECT 02 — CTF PLATFORM */}
-        <article className="group grid gap-8 border-t border-black/15 py-14 md:grid-cols-[0.1fr_0.9fr]">
+        <article className="group grid gap-8 border-t border-black/15 py-10 sm:py-14 md:grid-cols-[0.1fr_0.9fr]">
           <p className="text-sm text-black/35">02</p>
 
           <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -300,7 +308,7 @@ export default function Home() {
                 Cybersecurity · CTF Platform
               </p>
 
-              <h3 className="font-serif text-5xl tracking-tight md:text-6xl">
+              <h3 className="font-serif text-4xl tracking-tight sm:text-5xl md:text-6xl">
                 CTF Platform
               </h3>
 
@@ -336,7 +344,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex min-h-[400px] items-center justify-center overflow-hidden rounded-[36px] bg-[#4f7cff] p-8 text-white transition-all duration-500 group-hover:rounded-[60px]">
+            <div className="flex min-h-[340px] sm:min-h-[400px] items-center justify-center overflow-hidden rounded-[36px] bg-[#4f7cff] p-8 text-white transition-all duration-500 group-hover:rounded-[60px]">
               <div className="w-full max-w-md">
                 <p className="text-xs uppercase tracking-[0.35em] text-white/50">
                   Capture The Flag
@@ -372,7 +380,7 @@ export default function Home() {
         </article>
 
         {/* PROJECT 03 — NETWORK IDS */}
-        <article className="group grid gap-8 border-t border-black/15 py-14 md:grid-cols-[0.1fr_0.9fr]">
+        <article className="group grid gap-8 border-t border-black/15 py-10 sm:py-14 md:grid-cols-[0.1fr_0.9fr]">
           <p className="text-sm text-black/35">03</p>
 
           <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -381,7 +389,7 @@ export default function Home() {
                 Network Security · Python
               </p>
 
-              <h3 className="font-serif text-5xl tracking-tight md:text-6xl">
+              <h3 className="font-serif text-4xl tracking-tight sm:text-5xl md:text-6xl">
                 Network IDS
               </h3>
 
@@ -417,7 +425,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex min-h-[400px] items-center justify-center overflow-hidden rounded-[36px] bg-[#d8e7d2] p-8 transition-all duration-500 group-hover:rounded-[60px]">
+            <div className="flex min-h-[340px] sm:min-h-[400px] items-center justify-center overflow-hidden rounded-[36px] bg-[#d8e7d2] p-8 transition-all duration-500 group-hover:rounded-[60px]">
               <div className="w-full max-w-md">
                 <div className="flex items-center justify-between">
                   <div>
@@ -456,7 +464,7 @@ export default function Home() {
         </article>
 
         {/* PROJECT 04 — HAND GESTURE */}
-        <article className="group grid gap-8 border-y border-black/15 py-14 md:grid-cols-[0.1fr_0.9fr]">
+        <article className="group grid gap-8 border-y border-black/15 py-10 sm:py-14 md:grid-cols-[0.1fr_0.9fr]">
           <p className="text-sm text-black/35">04</p>
 
           <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -465,7 +473,7 @@ export default function Home() {
                 Computer Vision · Python
               </p>
 
-              <h3 className="font-serif text-5xl tracking-tight md:text-6xl">
+              <h3 className="font-serif text-4xl tracking-tight sm:text-5xl md:text-6xl">
                 Hand Gesture
                 <br />
                 Project
@@ -502,7 +510,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex min-h-[400px] items-center justify-center overflow-hidden rounded-[36px] bg-[#ffcf3f] p-8 transition-all duration-500 group-hover:rounded-[60px]">
+            <div className="flex min-h-[340px] sm:min-h-[400px] items-center justify-center overflow-hidden rounded-[36px] bg-[#ffcf3f] p-8 transition-all duration-500 group-hover:rounded-[60px]">
               <div className="text-center">
                 <p className="text-xs uppercase tracking-[0.35em] text-black/40">
                   Computer Vision
@@ -526,13 +534,13 @@ export default function Home() {
       </section>
 
       {/* STATEMENT */}
-      <section className="px-6 py-24 md:px-12 lg:px-16">
+      <section className="px-5 py-16 sm:px-6 sm:py-20 md:px-12 md:py-24 lg:px-16">
         <div className="mx-auto max-w-5xl text-center">
           <p className="text-xs uppercase tracking-[0.35em] text-black/40">
             Building & Learning
           </p>
 
-          <h2 className="mt-8 font-serif text-5xl leading-[1.05] tracking-tight md:text-7xl">
+          <h2 className="mt-8 font-serif text-4xl leading-[1.05] tracking-tight sm:text-5xl md:text-7xl">
             Security is better
             <br />
             understood by building.
