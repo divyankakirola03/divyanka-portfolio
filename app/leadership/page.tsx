@@ -46,7 +46,10 @@ export default function LeadershipPage() {
     <main className="min-h-screen overflow-x-hidden bg-[#f7f5f0] text-[#111]">
       <Navbar />
 
-      {/* HERO SECTION */}
+      {/* =====================================================
+          HERO SECTION
+      ====================================================== */}
+
       <section className="px-5 pb-16 pt-10 sm:px-6 md:px-12 md:pb-24 md:pt-16 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <Link
@@ -58,6 +61,7 @@ export default function LeadershipPage() {
 
           <div className="mt-10 grid gap-10 lg:grid-cols-[0.58fr_0.42fr] lg:items-end">
             {/* HERO TEXT */}
+
             <div>
               <p className="text-xs uppercase tracking-[0.35em] text-black/40">
                 Leadership & Community
@@ -72,14 +76,15 @@ export default function LeadershipPage() {
               </h1>
 
               <p className="mt-8 max-w-xl text-base leading-relaxed text-black/55">
-                My leadership journey is centered around practical
-                cybersecurity education, peer collaboration and creating
-                opportunities where students can learn security by actually
-                building, investigating and experimenting.
+                My journey beyond technical projects includes community
+                leadership, peer learning, public speaking and campus outreach.
+                I enjoy creating spaces where people can learn, collaborate and
+                become confident enough to teach others.
               </p>
             </div>
 
             {/* HERO IMAGE */}
+
             <div className="relative min-h-[440px] overflow-hidden rounded-[32px] sm:min-h-[560px]">
               <Image
                 src="/leadership/div6.png"
@@ -94,7 +99,10 @@ export default function LeadershipPage() {
         </div>
       </section>
 
-      {/* CYBERZEE EXPERIENCE */}
+      {/* =====================================================
+          EXPERIENCE 01 — CYBERZEE
+      ====================================================== */}
+
       <section className="border-t border-black/10 px-5 py-16 sm:px-6 md:px-12 md:py-24 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs uppercase tracking-[0.35em] text-black/40">
@@ -102,7 +110,8 @@ export default function LeadershipPage() {
           </p>
 
           <div className="mt-8 grid gap-12 lg:grid-cols-[0.42fr_0.58fr] lg:items-center">
-            {/* TEXT */}
+            {/* CYBERZEE TEXT */}
+
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-black/40">
                 Lead · 2025—Present
@@ -125,6 +134,7 @@ export default function LeadershipPage() {
               </p>
 
               {/* ROLE TAGS */}
+
               <div className="mt-8 grid grid-cols-2 gap-3">
                 {[
                   "Workshop Planning",
@@ -142,9 +152,10 @@ export default function LeadershipPage() {
               </div>
             </div>
 
-            {/* CYBERZEE IMAGE GRID */}
+            {/* CYBERZEE PHOTOS */}
+
             <div className="grid grid-cols-2 gap-3">
-              <div className="relative min-h-[420px] overflow-hidden rounded-[28px]">
+              <div className="relative min-h-[330px] overflow-hidden rounded-[28px] sm:min-h-[420px]">
                 <Image
                   src="/leadership/div5.png"
                   alt="CyberZee technical session"
@@ -154,10 +165,10 @@ export default function LeadershipPage() {
                 />
               </div>
 
-              <div className="relative min-h-[420px] overflow-hidden rounded-[28px]">
+              <div className="relative min-h-[330px] overflow-hidden rounded-[28px] sm:min-h-[420px]">
                 <Image
-                  src="/leadership/div2.jpeg"
-                  alt="Speaking during a university event"
+                  src="/leadership/div4.png"
+                  alt="Supporting students during a cybersecurity workshop"
                   fill
                   className="object-cover"
                   sizes="50vw"
@@ -167,6 +178,7 @@ export default function LeadershipPage() {
           </div>
 
           {/* WORKSHOP GALLERY */}
+
           <div className="mt-5 grid gap-5 md:grid-cols-2">
             <div className="group relative min-h-[380px] overflow-hidden rounded-[30px]">
               <Image
@@ -190,8 +202,8 @@ export default function LeadershipPage() {
 
             <div className="group relative min-h-[380px] overflow-hidden rounded-[30px]">
               <Image
-                src="/leadership/div4.png"
-                alt="Supporting students during a cybersecurity workshop"
+                src="/leadership/div6.png"
+                alt="Leading a peer learning session"
                 fill
                 className="object-cover transition duration-700 group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -199,7 +211,7 @@ export default function LeadershipPage() {
 
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6 pt-24 text-white">
                 <p className="text-xs uppercase tracking-[0.25em] text-white/60">
-                  Peer Mentoring
+                  Peer Learning
                 </p>
 
                 <p className="mt-2 font-serif text-3xl">
@@ -211,49 +223,55 @@ export default function LeadershipPage() {
         </div>
       </section>
 
-      {/* CAMPUS AMBASSADOR */}
+      {/* =====================================================
+          EXPERIENCE 02 — ANCHORING
+      ====================================================== */}
+
       <section className="bg-[#111] px-5 py-16 text-white sm:px-6 md:px-12 md:py-24 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <p className="text-xs uppercase tracking-[0.35em] text-white/40">
             Experience 02
           </p>
 
-          <div className="mt-8 grid gap-12 lg:grid-cols-[0.52fr_0.48fr] lg:items-center">
-            {/* IMAGE */}
-            <div className="relative min-h-[440px] overflow-hidden rounded-[32px] sm:min-h-[620px]">
+          <div className="mt-8 grid gap-12 lg:grid-cols-[0.5fr_0.5fr] lg:items-center">
+            {/* PODIUM PHOTO */}
+
+            <div className="relative min-h-[460px] overflow-hidden rounded-[32px] sm:min-h-[620px]">
               <Image
-                src="/leadership/photo_div_port.png"
-                alt="Campus Ambassador experience"
+                src="/leadership/div2.jpeg"
+                alt="Anchoring a university event"
                 fill
                 className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 52vw"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
 
-            {/* CONTENT */}
+            {/* ANCHORING CONTENT */}
+
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-white/40">
-                Campus Ambassador
+                Anchoring & Public Speaking
               </p>
 
               <h2 className="mt-4 font-serif text-5xl tracking-tight sm:text-6xl md:text-7xl">
-                CRAC
+                On stage.
                 <br />
-                Learning
+                In the moment.
               </h2>
 
               <p className="mt-7 max-w-lg text-base leading-relaxed text-white/55">
-                As a Campus Ambassador, I contributed to connecting students
-                with practical cybersecurity learning opportunities and
-                promoting technical engagement on campus.
+                Alongside my technical and leadership work, I have anchored
+                university events and represented student communities on stage.
+                These experiences have strengthened my communication, audience
+                engagement and ability to stay composed in live environments.
               </p>
 
               <div className="mt-10">
                 {[
-                  "Campus outreach and student engagement",
-                  "Cybersecurity awareness initiatives",
-                  "Workshop and collaboration support",
-                  "Building connections between learners and security communities",
+                  "Live event anchoring",
+                  "Audience engagement",
+                  "Public speaking and communication",
+                  "Representing student communities on stage",
                 ].map((item, index) => (
                   <div
                     key={item}
@@ -274,8 +292,79 @@ export default function LeadershipPage() {
         </div>
       </section>
 
-      {/* LEADERSHIP APPROACH */}
+      {/* =====================================================
+          EXPERIENCE 03 — CAMPUS AMBASSADOR
+      ====================================================== */}
+
       <section className="px-5 py-16 sm:px-6 md:px-12 md:py-24 lg:px-16">
+        <div className="mx-auto max-w-7xl">
+          <p className="text-xs uppercase tracking-[0.35em] text-black/40">
+            Experience 03
+          </p>
+
+          <div className="mt-8 grid gap-12 lg:grid-cols-[0.45fr_0.55fr] lg:items-center">
+            {/* CRAC CONTENT */}
+
+            <div>
+              <p className="text-xs uppercase tracking-[0.3em] text-black/40">
+                Campus Ambassador
+              </p>
+
+              <h2 className="mt-4 font-serif text-5xl tracking-tight sm:text-6xl md:text-7xl">
+                CRAC
+                <br />
+                Learning
+              </h2>
+
+              <p className="mt-7 max-w-lg text-base leading-relaxed text-black/55">
+                As a Campus Ambassador, I contributed to cybersecurity
+                awareness, student outreach and connecting learners with
+                practical security workshops and community opportunities.
+              </p>
+
+              <div className="mt-10">
+                {[
+                  "Campus outreach and student engagement",
+                  "Cybersecurity awareness initiatives",
+                  "Workshop and collaboration support",
+                  "Connecting learners with practical security opportunities",
+                ].map((item, index) => (
+                  <div
+                    key={item}
+                    className="flex gap-5 border-b border-black/15 py-5"
+                  >
+                    <span className="text-xs text-black/30">
+                      0{index + 1}
+                    </span>
+
+                    <p className="text-sm leading-relaxed text-black/60">
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* CAMPUS AMBASSADOR IMAGE */}
+
+            <div className="relative min-h-[460px] overflow-hidden rounded-[32px] bg-white sm:min-h-[650px]">
+              <Image
+                src="/leadership/photo_div_port.png"
+                alt="CRAC Learning Campus Ambassador"
+                fill
+                className="object-contain p-3 sm:p-6"
+                sizes="(max-width: 1024px) 100vw, 55vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =====================================================
+          LEADERSHIP APPROACH
+      ====================================================== */}
+
+      <section className="border-t border-black/10 px-5 py-16 sm:px-6 md:px-12 md:py-24 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.4fr_0.6fr]">
             <div>
@@ -310,7 +399,10 @@ export default function LeadershipPage() {
         </div>
       </section>
 
-      {/* SELECTED INITIATIVES */}
+      {/* =====================================================
+          SELECTED INITIATIVES
+      ====================================================== */}
+
       <section className="border-t border-black/10 px-5 py-16 sm:px-6 md:px-12 md:py-24 lg:px-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-8 lg:grid-cols-[0.6fr_0.4fr] lg:items-end">
@@ -333,6 +425,7 @@ export default function LeadershipPage() {
           </div>
 
           {/* INITIATIVE CARDS */}
+
           <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {initiatives.map((item, index) => {
               const cardStyle =
@@ -373,39 +466,13 @@ export default function LeadershipPage() {
         </div>
       </section>
 
-      {/* FINAL PHOTO SECTION */}
-      <section className="px-5 pb-16 sm:px-6 md:px-12 md:pb-24 lg:px-16">
-        <div className="mx-auto max-w-7xl">
-          <div className="relative min-h-[480px] overflow-hidden rounded-[36px] md:min-h-[650px]">
-            <Image
-              src="/leadership/div6.png"
-              alt="Leading and teaching through cybersecurity community work"
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
+      {/* =====================================================
+          FINAL PHILOSOPHY CTA
+      ====================================================== */}
 
-            <div className="absolute inset-0 bg-black/25" />
-
-            <div className="absolute bottom-0 left-0 max-w-3xl p-7 text-white sm:p-10 md:p-14">
-              <p className="text-xs uppercase tracking-[0.35em] text-white/65">
-                Community · Learning · Security
-              </p>
-
-              <h2 className="mt-5 font-serif text-4xl leading-[1] sm:text-5xl md:text-7xl">
-                Good communities
-                <br />
-                create more builders.
-              </h2>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PHILOSOPHY */}
-      <section className="border-t border-black/10 px-5 py-16 text-center sm:px-6 md:px-12 md:py-24 lg:px-16">
-        <div className="mx-auto max-w-5xl">
-          <p className="text-xs uppercase tracking-[0.35em] text-black/40">
+      <section className="bg-[#4f7cff] px-5 py-16 text-white sm:px-6 md:px-12 md:py-24 lg:px-16">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="text-xs uppercase tracking-[0.35em] text-white/55">
             Leadership Philosophy
           </p>
 
@@ -415,14 +482,14 @@ export default function LeadershipPage() {
             Build what you wish existed.
           </h2>
 
-          <p className="mx-auto mt-7 max-w-xl text-sm leading-relaxed text-black/50">
+          <p className="mx-auto mt-7 max-w-xl text-sm leading-relaxed text-white/65">
             Leadership, for me, is about creating opportunities for people to
             learn, experiment and eventually teach others.
           </p>
 
           <Link
             href="/#contact"
-            className="mt-10 inline-flex rounded-full bg-black px-8 py-4 text-sm text-white transition duration-300 hover:scale-105"
+            className="mt-10 inline-flex rounded-full bg-white px-8 py-4 text-sm text-black transition duration-300 hover:scale-105"
           >
             Let&apos;s Talk
           </Link>
